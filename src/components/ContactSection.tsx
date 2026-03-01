@@ -13,11 +13,34 @@ const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.");
-    setForm({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      formData.append("access_key", "1d9d27e8-d94c-4b6a-80ed-c3513bb62307");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Message sent! I'll get back to you soon.");
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast.error(data.message || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -45,23 +68,23 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground block mb-1.5">Name</label>
-                <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="Your name" />
+                <input name="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="Your name" />
               </div>
               <div>
                 <label className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground block mb-1.5">Email</label>
-                <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="you@email.com" />
+                <input name="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="you@email.com" />
               </div>
             </div>
             <div>
               <label className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground block mb-1.5">Subject</label>
-              <input value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="Subject" />
+              <input name="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} required className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors" placeholder="Subject" />
             </div>
             <div>
               <label className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground block mb-1.5">Message</label>
-              <textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} required rows={5} className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors resize-y" placeholder="Your message..." />
+              <textarea name="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} required rows={5} className="w-full bg-card border border-border text-foreground font-mono text-[13px] px-4 py-3 outline-none focus:border-primary transition-colors resize-y" placeholder="Your message..." />
             </div>
-            <button type="submit" className="btn-clip self-start inline-flex items-center gap-2 px-7 py-3 bg-primary text-primary-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:bg-foreground transition-colors">
-              Send Message ↗
+            <button type="submit" disabled={isSubmitting} className="btn-clip self-start inline-flex items-center gap-2 px-7 py-3 bg-primary text-primary-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:bg-foreground transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              {isSubmitting ? "Sending..." : "Send Message ↗"}
             </button>
           </form>
         </div>

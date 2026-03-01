@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Omkar Sawant - Personal Portfolio
 
-## Project info
+Welcome to my personal portfolio repository! I am a **Software Developer & Cyber Security Student** passionate about building cross-platform applications, RESTful APIs, and real-world solutions with modern web technologies.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 About Me
 
-## How can I edit this code?
+I specialize in full-stack development and have a strong foundation in cloud architecture and cybersecurity. With a CGPA of 7.72, I am continually learning and building projects that solve real-world problems. I have also actively participated in multiple hackathons, including the Innovate You 2.0 National Hackathon and CRAFTX Creation (NMIMS).
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 💻 Technical Arsenal
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Programming Languages
+- Python
+- Java
+- JavaScript
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frameworks & Tools
+- React Native & App Development (Expo)
+- React.js
+- Node.js & Express.js
+- Python Flask
+- Linux CLI
 
-**Use your preferred IDE**
+### Databases & Cloud
+- SQL / PostgreSQL / Oracle DB
+- MongoDB
+- RESTful API Design
+- AWS (Amazon Web Services)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Data & Machine Learning
+- Pandas
+- NumPy
+- Scikit-learn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Selected Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 01. AQI Monitor
+A cross-platform air quality monitoring mobile app with location-based detection displaying PM2.5, PM10, CO, NO2, SO2 & O3 levels. Features a color-coded UI with health recommendations based on AQI categories.
+* **Tech Stack:** React Native, Expo, JavaScript
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 02. Learning Management System
+A full-stack LMS with role-based access control for academic process management. Includes scalable RESTful APIs with JWT authentication and responsive React components ensuring cross-browser compatibility.
+* **Tech Stack:** MongoDB, Express.js, React.js, Node.js, JWT
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 03. Agri-Sahayak
+A voice-assisted farmer app with multilingual voice bot integration and real-time API communication for agricultural schemes and market data. Improved rural accessibility and user engagement by 40%.
+* **Tech Stack:** React Native, Python Flask, REST APIs
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🏆 Certifications & Achievements
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **AWS Academy Cloud Architecting** - Cloud Technical Essentials
+- **EC-Council** - SQL Injection & Ethical Hacking Essentials
+- **Forage Virtual Internship** - Tata Group Cybersecurity Analyst Simulation
+- **Hackathon Participant** - Innovate You 2.0 (National) & CRAFTX Creation (NMIMS)
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📬 Get in Touch
 
-## What technologies are used for this project?
+I am always open to new opportunities and collaborations. Feel free to explore my source code or reach out to me!
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*(Note: The source code for this portfolio site itself is built using React, Vite, Tailwind CSS, and Framer Motion.)*
