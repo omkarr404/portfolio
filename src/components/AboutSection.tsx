@@ -6,8 +6,8 @@ const info = [
   { label: "Location", value: "Kalyan East, Mumbai" },
   { label: "Phone", value: "+91-7517935308" },
   { label: "Email", value: "osomkar444@gmail.com", href: "mailto:osomkar444@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/OmkarSawant", href: "https://linkedin.com/in/OmkarSawant" },
-  { label: "GitHub", value: "github.com/OmkarSawant", href: "https://github.com/OmkarSawant" },
+  { label: "LinkedIn", value: "linkedin.com/in/OmkarSawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
+  { label: "GitHub", value: "github.com/OmkarSawant", href: "https://github.com/omkarr404/" },
   { label: "Status", value: "● Open to Work" },
 ];
 
