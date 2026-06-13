@@ -2,10 +2,26 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skillGroups = [
-  { title: "Programming", items: ["Python", "Java", "JavaScript"] },
-  { title: "Frameworks & Tools", items: ["React Native", "React.js", "Node.js", "Flask", "Express.js", "Linux CLI"] },
-  { title: "Databases & Cloud", items: ["SQL / MongoDB", "Oracle DB", "AWS", "RESTful API Design"] },
-  { title: "Data & ML", items: ["Pandas", "NumPy", "Scikit-learn"] },
+  {
+    title: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "Java", "Python"],
+  },
+  {
+    title: "Frontend & Mobile",
+    items: ["React.js", "React Native", "Expo", "HTML5 & CSS3", "Responsive Design"],
+  },
+  {
+    title: "Backend & Databases",
+    items: ["Node.js", "Express.js", "FastAPI", "REST APIs", "MongoDB & SQL", "Firebase Firestore"],
+  },
+  {
+    title: "Auth & Security",
+    items: ["JWT Authentication", "Firebase Auth", "Role-Based Access (RBAC)"],
+  },
+  {
+    title: "Tools & Agile",
+    items: ["Git & GitHub", "Linux CLI", "VS Code", "Agile / Scrum"],
+  },
 ];
 
 const certs = [
@@ -27,7 +43,7 @@ const SkillsSection = () => {
           <h2 className="font-display font-extrabold text-[clamp(2rem,4vw,3.5rem)] tracking-[-0.03em] leading-none">Technical Arsenal</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {skillGroups.map((g) => (
             <div key={g.title}>
               <h3 className="font-display font-bold text-sm tracking-[0.1em] uppercase text-primary mb-4 pb-3 border-b border-border">{g.title}</h3>

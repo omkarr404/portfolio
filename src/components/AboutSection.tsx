@@ -3,12 +3,12 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const info = [
-  { label: "Location", value: "Kalyan East, Mumbai" },
+  { label: "Location", value: "Kalyan, Maharashtra, India" },
   { label: "Phone", value: "+91-7517935308" },
   { label: "Email", value: "osomkar444@gmail.com", href: "mailto:osomkar444@gmail.com" },
   { label: "LinkedIn", value: "linkedin.com/in/OmkarSawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
-  { label: "GitHub", value: "github.com/OmkarSawant", href: "https://github.com/omkarr404/" },
-  { label: "Status", value: "● Open to Work" },
+  { label: "GitHub", value: "github.com/omkarr404", href: "https://github.com/omkarr404/" },
+  { label: "Status", value: "● Open to Opportunities" },
 ];
 
 const AboutSection = () => {
@@ -25,12 +25,12 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="space-y-4 text-muted-foreground text-[13px] leading-[1.9]">
             <p>
-              I'm a <span className="text-foreground">B.Tech Information Technology</span> student specializing in Cyber Security at Ramrao Adik Institute of Technology, Navi Mumbai. Currently pursuing my degree while working as a <span className="text-foreground">Software Developer Intern</span> at Durwankur AI Labs.
+              I hold a B.Tech in <span className="text-foreground">Information Technology</span> from Ramrao Adik Institute of Technology, Navi Mumbai. Recently, I worked as a <span className="text-foreground">Software Developer Intern</span> at Durwankur AI Labs Pvt. Ltd.
             </p>
             <p>
-              I love building things — from <span className="text-foreground">mobile apps and full-stack platforms</span> to voice-assisted tools for rural communities. My work bridges technical problem-solving with real-world impact.
+              I specialize in building scalable web and mobile applications using <span className="text-foreground">React.js, React Native, Node.js, Express.js, and MongoDB</span>. My work bridges technical problem-solving with high-quality user experiences.
             </p>
-            <p>When I'm not coding, you'll find me gaming, sketching, or behind a camera lens.</p>
+            <p>I enjoy designing efficient architectures, optimizing APIs, and working in collaborative, agile teams to deliver real-world software solutions.</p>
           </div>
           <div>
             {info.map((i) => (

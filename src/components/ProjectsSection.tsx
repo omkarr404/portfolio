@@ -1,27 +1,31 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     num: "01",
-    date: "Jan 2026",
-    title: "AQI Monitor",
-    desc: "Cross-platform air quality monitoring mobile app with location-based detection displaying PM2.5, PM10, CO, NO2, SO2 & O3 levels. Color-coded UI with health recommendations based on AQI categories.",
-    tech: ["React Native", "Expo", "JavaScript"],
+    date: "May 2026",
+    title: "SafeMaha — Food Safety Complaint & Inspection Management Platform",
+    desc: "Engineered a full-stack citizen grievance platform for reporting food safety violations with image-based evidence submission and real-time complaint tracking. Implemented role-based access control for Citizens, FDA Officers, and Administrators, automating complaint assignment, inspection tracking, and case resolution workflows. Developed secure REST APIs using FastAPI, PostgreSQL, SQLAlchemy, JWT Authentication, and Supabase Storage.",
+    tech: ["React Native", "FastAPI", "PostgreSQL", "Supabase", "JWT"],
+    link: "https://github.com/omkarr404/SafeMaha",
   },
   {
     num: "02",
     date: "Nov 2025",
-    title: "Learning Management System",
-    desc: "Full-stack LMS with role-based access control for academic process management. Scalable RESTful APIs with JWT authentication and responsive React components ensuring cross-browser compatibility.",
-    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
+    title: "AirSense Plus — AQI Monitor",
+    desc: "Built a cross-platform mobile application delivering real-time air quality monitoring and pollutant analytics. Implemented geospatial services and location-based health alerts through an intuitive color-coded interface. Designed responsive mobile screens and optimized API integration for seamless performance across Android and iOS.",
+    tech: ["React Native", "Expo", "REST APIs", "Geospatial Services"],
+    link: "https://github.com/omkarr404/AirSensePlus",
   },
   {
     num: "03",
-    date: "Jun 2025",
-    title: "Agri-Sahayak",
-    desc: "Voice-assisted farmer app with multilingual voice bot integration, real-time API communication for agricultural schemes and market data. Improved rural accessibility and user engagement by 40%.",
-    tech: ["React Native", "Python Flask", "REST APIs"],
+    date: "Aug 2025",
+    title: "QuickOrder — QR-Based Restaurant SaaS",
+    desc: "Engineered a full-stack SaaS platform for restaurants, enabling QR-based digital ordering and streamlined customer dining experiences. Developed RESTful APIs and a real-time order management dashboard to support live order tracking and kitchen operations. Architected scalable MongoDB schemas for menu management and order processing.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Vite"],
+    link: "https://github.com/omkarr404/swift-order",
   },
 ];
 
@@ -40,13 +44,22 @@ const ProjectsSection = () => {
           {projects.map((p) => (
             <div key={p.num} className="group bg-card p-8 border border-border relative overflow-hidden hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative z-10">
-                <p className="text-[10px] text-muted-foreground tracking-[0.15em] mb-5">{p.num} / {p.date}</p>
-                <h3 className="font-display font-bold text-lg mb-2">{p.title}</h3>
-                <p className="text-muted-foreground text-xs leading-[1.7] mb-6">{p.desc}</p>
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div>
+                  <div className="flex justify-between items-center mb-5">
+                    <p className="text-[10px] text-muted-foreground tracking-[0.15em]">{p.num} / {p.date}</p>
+                    {p.link && (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        <Github size={16} />
+                      </a>
+                    )}
+                  </div>
+                  <h3 className="font-display font-bold text-base mb-3 leading-snug">{p.title}</h3>
+                  <p className="text-muted-foreground text-[11px] leading-[1.6] mb-6">{p.desc}</p>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {p.tech.map((t) => (
-                    <span key={t} className="text-[10px] tracking-[0.1em] uppercase px-2.5 py-1 bg-secondary/10 text-secondary border border-secondary/20">
+                    <span key={t} className="text-[9px] tracking-[0.08em] uppercase px-2 py-0.5 bg-secondary/10 text-secondary border border-secondary/20 font-mono">
                       {t}
                     </span>
                   ))}

@@ -1,53 +1,63 @@
 # Omkar Sawant - Personal Portfolio
 
-Welcome to my personal portfolio repository! I am a **Software Developer & Cyber Security Student** passionate about building cross-platform applications, RESTful APIs, and real-world solutions with modern web technologies.
+Welcome to my personal portfolio repository! I am a **Software Developer** holding a B.Tech in Information Technology from Ramrao Adik Institute of Technology, Navi Mumbai. I am passionate about building scalable, cross-platform web and mobile applications, designing RESTful APIs, and solving real-world challenges.
 
 ## 🚀 About Me
 
-I specialize in full-stack development and have a strong foundation in cloud architecture and cybersecurity. With a CGPA of 7.72, I am continually learning and building projects that solve real-world problems. I have also actively participated in multiple hackathons, including the Innovate You 2.0 National Hackathon and CRAFTX Creation (NMIMS).
+I specialize in full-stack development and have a strong foundation in building production-grade web and mobile application features. With a CGPA of **7.98/10**, I focus on engineering clean architectures, optimizing APIs, and working in collaborative, agile environments. Recently, I completed my internship as a Software Developer Intern at Durwankur AI Labs Pvt. Ltd.
 
 ---
 
 ## 💻 Technical Arsenal
 
-### Programming Languages
-- Python
+### Languages
+- JavaScript (ES6+)
+- TypeScript
 - Java
-- JavaScript
+- Python
 
-### Frameworks & Tools
-- React Native & App Development (Expo)
-- React.js
+### Frontend / Mobile
+- React.js & React Native
+- Expo
+- HTML5 & CSS3
+- Responsive Design
+
+### Backend & Databases
 - Node.js & Express.js
-- Python Flask
+- FastAPI
+- REST APIs & API Integration
+- MongoDB, PostgreSQL & SQLite
+- Firebase Firestore
+
+### Authentication & Security
+- JWT Authentication
+- Firebase Authentication
+- Role-Based Access Control (RBAC)
+
+### Tools & Methodologies
+- Git & GitHub
 - Linux CLI
-
-### Databases & Cloud
-- SQL / PostgreSQL / Oracle DB
-- MongoDB
-- RESTful API Design
-- AWS (Amazon Web Services)
-
-### Data & Machine Learning
-- Pandas
-- NumPy
-- Scikit-learn
+- VS Code
+- Agile / Scrum
 
 ---
 
 ## 📂 Selected Projects
 
-### 01. AQI Monitor
-A cross-platform air quality monitoring mobile app with location-based detection displaying PM2.5, PM10, CO, NO2, SO2 & O3 levels. Features a color-coded UI with health recommendations based on AQI categories.
-* **Tech Stack:** React Native, Expo, JavaScript
+### 01. SafeMaha — Food Safety Complaint & Inspection Management Platform
+Engineered a full-stack citizen grievance platform for reporting food safety violations with image-based evidence submission and real-time complaint tracking. Implemented role-based access control and automated complaint assignment, inspection tracking, and case resolution workflows.
+* **Tech Stack:** React Native (Expo), FastAPI, PostgreSQL, SQLAlchemy, Supabase Storage, JWT, REST APIs
+* **Repository:** [GitHub](https://github.com/omkarr404/)
 
-### 02. Learning Management System
-A full-stack LMS with role-based access control for academic process management. Includes scalable RESTful APIs with JWT authentication and responsive React components ensuring cross-browser compatibility.
-* **Tech Stack:** MongoDB, Express.js, React.js, Node.js, JWT
+### 02. AirSense Plus — AQI Monitor
+Built a cross-platform mobile application delivering real-time air quality monitoring and pollutant analytics. Implemented geospatial services and location-based health alerts through an intuitive color-coded interface.
+* **Tech Stack:** React Native, Expo, REST APIs, Geospatial Services
+* **Repository:** [GitHub](https://github.com/omkarr404/AirSensePlus)
 
-### 03. Agri-Sahayak
-A voice-assisted farmer app with multilingual voice bot integration and real-time API communication for agricultural schemes and market data. Improved rural accessibility and user engagement by 40%.
-* **Tech Stack:** React Native, Python Flask, REST APIs
+### 03. QuickOrder — QR-Based Restaurant SaaS
+Engineered a full-stack SaaS platform for restaurants, enabling QR-based digital ordering and streamlined customer dining experiences. Developed RESTful APIs and a real-time order management dashboard to support live order tracking and kitchen operations.
+* **Tech Stack:** React.js, Node.js, Express.js, MongoDB, Vite
+* **Repository:** [GitHub](https://github.com/omkarr404/swift-order)
 
 ---
 

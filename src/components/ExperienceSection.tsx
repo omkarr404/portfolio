@@ -3,35 +3,14 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    date: "Dec 2025 — Present",
-    location: "Vashi, Navi Mumbai",
+    date: "Dec 2025 – May 2026",
+    location: "Navi Mumbai, India",
     title: "Software Developer Intern",
     company: "Durwankur AI Labs Pvt. Ltd.",
     bullets: [
-      "Developed and maintained web and mobile applications using React.js and modern JavaScript.",
-      "Implemented responsive UIs and reusable components for production applications.",
-      "Integrated frontend applications with RESTful backend APIs and handled data flow.",
-      "Collaborated with developers and product teams following agile development practices.",
-    ],
-  },
-  {
-    date: "Aug 2023 — Aug 2024",
-    location: "Mumbai, India",
-    title: "Event Coordinator",
-    company: "College Non-Technical Committee",
-    bullets: [
-      "Planned and coordinated multiple college-level non-technical events with high student participation.",
-      "Collaborated with team members to manage logistics and execution.",
-    ],
-  },
-  {
-    date: "Sep 2023 — Aug 2024",
-    location: "Mumbai, India",
-    title: "Facilitator",
-    company: "Google Developer Student Club (GDSC)",
-    bullets: [
-      "Acted as a bridge between GDSC and students to promote Google technologies and learning resources.",
-      "Facilitated tech sessions and hackathons, engaging 50+ students in hands-on development.",
+      "Developed production-grade web and mobile application features using React.js, React Native, Node.js, and TypeScript in an Agile environment.",
+      "Built reusable UI components and integrated RESTful APIs to enable seamless communication between frontend and backend systems.",
+      "Implemented Firebase Authentication and Firestore-based real-time data synchronization while optimizing application performance and user experience.",
     ],
   },
 ];

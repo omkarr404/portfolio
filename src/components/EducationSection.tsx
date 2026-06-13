@@ -3,19 +3,10 @@ import { useRef } from "react";
 
 const education = [
   {
-    school: "Ramrao Adik Institute of Technology, D. Y. Patil University",
-    degree: "B.Tech Information Technology (Major: Cyber Security) — CGPA: 7.72/10",
-    meta: "Jul 2022 – Present · Navi Mumbai, India",
-  },
-  {
-    school: "Kankavli College",
-    degree: "12th Grade — 62.33%",
-    meta: "May 2021 – Jul 2022 · Sindhudurg, Maharashtra",
-  },
-  {
-    school: "St. Ursula School, Kankavli",
-    degree: "10th Grade — 83.80%",
-    meta: "May 2019 – Apr 2020 · Sindhudurg, Maharashtra",
+    school: "Ramrao Adik Institute of Technology, D.Y. Patil Deemed to be University",
+    degree: "B.Tech in Information Technology — CGPA: 7.98 / 10",
+    meta: "July 2022 – May 2026 · Navi Mumbai, India",
+    coursework: "Coursework: DSA, DBMS, OS, CN, Object-Oriented Programming (OOP), Software Engineering, Mobile Application Development",
   },
 ];
 
@@ -37,7 +28,12 @@ const EducationSection = () => {
               <div className="absolute -left-[2.1rem] top-1.5 w-2.5 h-2.5 bg-background border-2 border-primary rounded-full" />
               <h3 className="font-display font-bold text-base mb-1">{e.school}</h3>
               <p className="text-secondary text-[11px] mb-1">{e.degree}</p>
-              <p className="text-muted-foreground text-[11px]">{e.meta}</p>
+              <p className="text-muted-foreground text-[11px] mb-2">{e.meta}</p>
+              {e.coursework && (
+                <p className="text-muted-foreground text-[10px] italic leading-relaxed max-w-xl">
+                  {e.coursework}
+                </p>
+              )}
             </div>
           ))}
         </div>

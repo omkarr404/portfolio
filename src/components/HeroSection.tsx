@@ -34,12 +34,15 @@ const HeroSection = () => (
       </h1>
 
       <p className="max-w-[480px] text-muted-foreground text-[13px] leading-[1.9] mb-10">
-        Software Developer & Cyber Security student building cross-platform applications, RESTful APIs, and real-world solutions with modern web technologies.
+        Software Developer skilled in React.js, React Native, Node.js, Express.js, and MongoDB, building scalable web and mobile applications.
       </p>
 
       <div className="flex gap-4 flex-wrap">
         <a href="#projects" className="btn-clip inline-flex items-center gap-2 px-7 py-3 bg-primary text-primary-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:bg-foreground transition-colors">
           View Projects ↗
+        </a>
+        <a href="/Omkar_Sawant_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3 border border-border text-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:border-primary hover:text-primary transition-colors">
+          Resume ↗
         </a>
         <a href="#contact" className="inline-flex items-center gap-2 px-7 py-3 border border-border text-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:border-primary hover:text-primary transition-colors">
           Get in Touch
@@ -54,7 +57,7 @@ const HeroSection = () => (
     >
       {[
         { num: "3+", label: "Projects Built" },
-        { num: "7.72", label: "CGPA" },
+        { num: "7.98", label: "CGPA" },
         { num: "2+", label: "Hackathons" },
       ].map((s) => (
         <div key={s.label}>
