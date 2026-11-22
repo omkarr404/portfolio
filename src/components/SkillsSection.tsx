@@ -4,23 +4,27 @@ import { useRef } from "react";
 const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript (ES6+)", "TypeScript", "Java", "Python"],
+    items: ["JavaScript (ES6+)", "TypeScript", "Java", "Python", "PHP"],
   },
   {
-    title: "Frontend & Mobile",
-    items: ["React.js", "React Native", "Expo", "HTML5 & CSS3", "Responsive Design"],
+    title: "Web Development",
+    items: ["HTML5 & CSS3", "React.js", "Responsive Web Design", "REST APIs", "API Integration"],
   },
   {
-    title: "Backend & Databases",
-    items: ["Node.js", "Express.js", "FastAPI", "REST APIs", "MongoDB & SQL", "Firebase Firestore"],
+    title: "Mobile Development",
+    items: ["React Native", "Expo", "Cross-Platform UI", "Mobile APIs"],
+  },
+  {
+    title: "Backend & DBs",
+    items: ["Node.js & Express.js", "FastAPI", "MySQL & PostgreSQL", "MongoDB", "SQLite"],
   },
   {
     title: "Auth & Security",
     items: ["JWT Authentication", "Firebase Auth", "Role-Based Access (RBAC)"],
   },
   {
-    title: "Tools & Agile",
-    items: ["Git & GitHub", "Linux CLI", "VS Code", "Agile / Scrum"],
+    title: "Tools & Practices",
+    items: ["Git & GitHub", "Linux CLI", "VS Code", "Agile / Scrum", "Debugging & Testing", "Website Maintenance"],
   },
 ];
 
@@ -43,7 +47,7 @@ const SkillsSection = () => {
           <h2 className="font-display font-extrabold text-[clamp(2rem,4vw,3.5rem)] tracking-[-0.03em] leading-none">Technical Arsenal</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {skillGroups.map((g) => (
             <div key={g.title}>
               <h3 className="font-display font-bold text-sm tracking-[0.1em] uppercase text-primary mb-4 pb-3 border-b border-border">{g.title}</h3>

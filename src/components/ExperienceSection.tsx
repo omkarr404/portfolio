@@ -3,14 +3,26 @@ import { useRef } from "react";
 
 const experiences = [
   {
+    date: "June 2026 – Present",
+    location: "Navi Mumbai, India",
+    title: "Software Developer Intern",
+    company: "KS Softech",
+    bullets: [
+      "Developing full-stack web applications using PHP, JavaScript, React.js, HTML5, CSS3, and MySQL, implementing functional frontend features and backend logic for live development projects.",
+      "Building database-driven modules and responsive user interfaces with reusable components and dynamic data handling to improve usability, maintainability, and application performance.",
+      "Contributing across the software development lifecycle through feature implementation, database integration, debugging, testing, deployment, and resolution of application issues.",
+      "Customized and maintained WordPress websites using themes, plugins, responsive layouts, and content management features.",
+    ],
+  },
+  {
     date: "Dec 2025 – May 2026",
     location: "Navi Mumbai, India",
     title: "Software Developer Intern",
     company: "Durwankur AI Labs Pvt. Ltd.",
     bullets: [
-      "Developed production-grade web and mobile application features using React.js, React Native, Node.js, and TypeScript in an Agile environment.",
-      "Built reusable UI components and integrated RESTful APIs to enable seamless communication between frontend and backend systems.",
-      "Implemented Firebase Authentication and Firestore-based real-time data synchronization while optimizing application performance and user experience.",
+      "Developed web and mobile application features using React.js, React Native, Node.js, TypeScript, HTML5, and CSS3 within an Agile/Scrum development environment.",
+      "Built reusable UI components and integrated RESTful APIs to enable reliable communication between frontend and backend systems.",
+      "Implemented JWT Authentication and real-time data synchronization while debugging application issues and optimizing performance and user experience.",
     ],
   },
 ];

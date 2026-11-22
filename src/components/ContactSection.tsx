@@ -5,8 +5,8 @@ import { toast } from "sonner";
 const contactLinks = [
   { icon: "✉", label: "osomkar444@gmail.com", href: "mailto:osomkar444@gmail.com" },
   { icon: "✆", label: "+91-7517935308", href: "tel:+917517935308" },
-  { label: "LinkedIn", value: "linkedin.com/in/OmkarSawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
-  { label: "GitHub", value: "github.com/OmkarSawant", href: "https://github.com/omkarr404/" },
+  { icon: "💼", label: "linkedin.com/in/omkar-sawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
+  { icon: "🐙", label: "github.com/omkarr404", href: "https://github.com/omkarr404/" },
 ];
 
 const ContactSection = () => {

@@ -4,9 +4,9 @@ import { useRef } from "react";
 
 const info = [
   { label: "Location", value: "Kalyan, Maharashtra, India" },
-  { label: "Phone", value: "+91-7517935308" },
+  { label: "Phone", value: "+91-7517935308", href: "tel:+917517935308" },
   { label: "Email", value: "osomkar444@gmail.com", href: "mailto:osomkar444@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/OmkarSawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
+  { label: "LinkedIn", value: "linkedin.com/in/omkar-sawant", href: "https://www.linkedin.com/in/omkar-sawant-92783024a/" },
   { label: "GitHub", value: "github.com/omkarr404", href: "https://github.com/omkarr404/" },
   { label: "Status", value: "● Open to Opportunities" },
 ];
@@ -25,12 +25,14 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="space-y-4 text-muted-foreground text-[13px] leading-[1.9]">
             <p>
-              I hold a B.Tech in <span className="text-foreground">Information Technology</span> from Ramrao Adik Institute of Technology, Navi Mumbai. Recently, I worked as a <span className="text-foreground">Software Developer Intern</span> at Durwankur AI Labs Pvt. Ltd.
+              I hold a B.Tech in <span className="text-foreground">Information Technology</span> from Ramrao Adik Institute of Technology, Navi Mumbai (CGPA: 7.99/10). Currently, I am interning as a <span className="text-foreground">Software Developer</span> at <span className="text-foreground">KS Softech</span>, having previously interned at <span className="text-foreground">Durwankur AI Labs Pvt. Ltd.</span>
             </p>
             <p>
-              I specialize in building scalable web and mobile applications using <span className="text-foreground">React.js, React Native, Node.js, Express.js, and MongoDB</span>. My work bridges technical problem-solving with high-quality user experiences.
+              I specialize in developing responsive web and mobile applications using <span className="text-foreground">JavaScript (ES6+), TypeScript, React.js, React Native, Node.js, Express.js, PHP, and MySQL/MongoDB</span>. My experience spans crafting reusable UI components, integrating robust RESTful APIs, and optimizing database-driven architectures.
             </p>
-            <p>I enjoy designing efficient architectures, optimizing APIs, and working in collaborative, agile teams to deliver real-world software solutions.</p>
+            <p>
+              I thrive across the full software development lifecycle—from feature planning and dynamic data handling to debugging, testing, deployment, and performance optimization within Agile/Scrum teams.
+            </p>
           </div>
           <div>
             {info.map((i) => (

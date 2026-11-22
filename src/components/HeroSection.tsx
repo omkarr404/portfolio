@@ -33,15 +33,15 @@ const HeroSection = () => (
         </span>
       </h1>
 
-      <p className="max-w-[480px] text-muted-foreground text-[13px] leading-[1.9] mb-10">
-        Software Developer skilled in React.js, React Native, Node.js, Express.js, and MongoDB, building scalable web and mobile applications.
+      <p className="max-w-[520px] text-muted-foreground text-[13px] leading-[1.9] mb-10">
+        Software Developer experienced in developing responsive web and mobile applications with React.js, React Native, Node.js, PHP, and modern REST APIs.
       </p>
 
       <div className="flex gap-4 flex-wrap">
         <a href="#projects" className="btn-clip inline-flex items-center gap-2 px-7 py-3 bg-primary text-primary-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:bg-foreground transition-colors">
           View Projects ↗
         </a>
-        <a href="/Omkar_Sawant_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3 border border-border text-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:border-primary hover:text-primary transition-colors">
+        <a href="/Omkar_Janardan_Sawant.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3 border border-border text-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:border-primary hover:text-primary transition-colors">
           Resume ↗
         </a>
         <a href="#contact" className="inline-flex items-center gap-2 px-7 py-3 border border-border text-foreground font-mono text-[11px] tracking-[0.12em] uppercase hover:border-primary hover:text-primary transition-colors">
@@ -56,9 +56,9 @@ const HeroSection = () => (
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }}
     >
       {[
+        { num: "2", label: "Internships" },
         { num: "3+", label: "Projects Built" },
-        { num: "7.98", label: "CGPA" },
-        { num: "2+", label: "Hackathons" },
+        { num: "7.99", label: "CGPA" },
       ].map((s) => (
         <div key={s.label}>
           <span className="font-display font-extrabold text-4xl text-primary block leading-none">{s.num}</span>

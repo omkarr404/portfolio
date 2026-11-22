@@ -4,9 +4,9 @@ import { useRef } from "react";
 const education = [
   {
     school: "Ramrao Adik Institute of Technology, D.Y. Patil Deemed to be University",
-    degree: "B.Tech in Information Technology — CGPA: 7.98 / 10",
+    degree: "B.Tech in Information Technology — CGPA: 7.99 / 10",
     meta: "July 2022 – May 2026 · Navi Mumbai, India",
-    coursework: "Coursework: DSA, DBMS, OS, CN, Object-Oriented Programming (OOP), Software Engineering, Mobile Application Development",
+    coursework: "Coursework: DSA, DBMS, OS, Computer Networks, OOP, Software Engineering, Mobile App Development",
   },
 ];
 
